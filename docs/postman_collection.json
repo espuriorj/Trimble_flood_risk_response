@@ -1,0 +1,408 @@
+{
+	"info": {
+		"_postman_id": "39497016-c93e-45db-9e6b-0c86a01fe3ff",
+		"name": "Flood Risk Management Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38401760",
+		"_collection_link": "https://finaccel-kredivo.postman.co/workspace/Kredivo-Indonesia~bfb4957f-33da-434e-9af1-e3d800e1a74e/collection/38401760-39497016-c93e-45db-9e6b-0c86a01fe3ff?action=share&source=collection_link&creator=38401760"
+	},
+	"item": [
+		{
+			"name": "Get flood risk list API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/plain"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/flood/risk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flood",
+						"risk"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/flood/risk",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"flood",
+								"risk"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 02 Jun 2025 15:08:48 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "765"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"ID\": 1,\n            \"Latitude\": 52.52,\n            \"Longitude\": 13.41,\n            \"RiskLevel\": \"Low\",\n            \"DischargeM3S\": 5.3,\n            \"AssessedAt\": \"2025-06-02T20:37:23.748256Z\"\n        },\n        {\n            \"ID\": 2,\n            \"Latitude\": 51.29,\n            \"Longitude\": 14.21,\n            \"RiskLevel\": \"Low\",\n            \"DischargeM3S\": 0.08,\n            \"AssessedAt\": \"2025-06-02T20:38:02.827807Z\"\n        },\n        {\n            \"ID\": 3,\n            \"Latitude\": 11.29,\n            \"Longitude\": -4.21,\n            \"RiskLevel\": \"Low\",\n            \"DischargeM3S\": 0.63,\n            \"AssessedAt\": \"2025-06-02T20:38:15.202952Z\"\n        },\n        {\n            \"ID\": 4,\n            \"Latitude\": 76.34,\n            \"Longitude\": 39.41,\n            \"RiskLevel\": \"Low\",\n            \"DischargeM3S\": 0,\n            \"AssessedAt\": \"2025-06-02T20:38:33.600083Z\"\n        },\n        {\n            \"ID\": 5,\n            \"Latitude\": 76.34,\n            \"Longitude\": 39.41,\n            \"RiskLevel\": \"Low\",\n            \"DischargeM3S\": 0,\n            \"AssessedAt\": \"2025-06-02T20:38:35.56615Z\"\n        },\n        {\n            \"ID\": 6,\n            \"Latitude\": 76.34,\n            \"Longitude\": 39.41,\n            \"RiskLevel\": \"Low\",\n            \"DischargeM3S\": 0,\n            \"AssessedAt\": \"2025-06-02T20:38:36.366557Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get flood risk API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/plain"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/flood/risk/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flood",
+						"risk",
+						"{id}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/flood/risk",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"flood",
+								"risk"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 02 Jun 2025 15:08:48 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "765"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"ID\": 1,\n            \"Latitude\": 52.52,\n            \"Longitude\": 13.41,\n            \"RiskLevel\": \"Low\",\n            \"DischargeM3S\": 5.3,\n            \"AssessedAt\": \"2025-06-02T20:37:23.748256Z\"\n        },\n        {\n            \"ID\": 2,\n            \"Latitude\": 51.29,\n            \"Longitude\": 14.21,\n            \"RiskLevel\": \"Low\",\n            \"DischargeM3S\": 0.08,\n            \"AssessedAt\": \"2025-06-02T20:38:02.827807Z\"\n        },\n        {\n            \"ID\": 3,\n            \"Latitude\": 11.29,\n            \"Longitude\": -4.21,\n            \"RiskLevel\": \"Low\",\n            \"DischargeM3S\": 0.63,\n            \"AssessedAt\": \"2025-06-02T20:38:15.202952Z\"\n        },\n        {\n            \"ID\": 4,\n            \"Latitude\": 76.34,\n            \"Longitude\": 39.41,\n            \"RiskLevel\": \"Low\",\n            \"DischargeM3S\": 0,\n            \"AssessedAt\": \"2025-06-02T20:38:33.600083Z\"\n        },\n        {\n            \"ID\": 5,\n            \"Latitude\": 76.34,\n            \"Longitude\": 39.41,\n            \"RiskLevel\": \"Low\",\n            \"DischargeM3S\": 0,\n            \"AssessedAt\": \"2025-06-02T20:38:35.56615Z\"\n        },\n        {\n            \"ID\": 6,\n            \"Latitude\": 76.34,\n            \"Longitude\": 39.41,\n            \"RiskLevel\": \"Low\",\n            \"DischargeM3S\": 0,\n            \"AssessedAt\": \"2025-06-02T20:38:36.366557Z\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/flood/risk/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"flood",
+								"risk",
+								"{id}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 02 Jun 2025 15:09:34 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "149"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"ID\": 3,\n        \"Latitude\": 11.29,\n        \"Longitude\": -4.21,\n        \"RiskLevel\": \"Low\",\n        \"DischargeM3S\": 0.63,\n        \"AssessedAt\": \"2025-06-02T20:38:15.202952Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Save flood risk API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"latitude\": 76.34, \"longitude\": 39.41}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flood/risk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flood",
+						"risk"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"latitude\": 52.52, \"longitude\": 13.41}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/flood/risk",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"flood",
+								"risk"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 02 Jun 2025 15:07:23 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "153"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"ID\": 1,\n        \"Latitude\": 52.52,\n        \"Longitude\": 13.41,\n        \"RiskLevel\": \"Low\",\n        \"DischargeM3S\": 5.3,\n        \"AssessedAt\": \"2025-06-02T20:37:23.748256+05:30\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Save flood report",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"affected_area\": \"River Valley\", \"actions\": \"Evacuation initiated\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flood/report",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flood",
+						"report"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"affected_area\": \"River Valley\", \"actions\": \"Evacuation initiated\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/flood/report",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"flood",
+								"report"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 02 Jun 2025 15:11:18 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "92"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"area\": \"River Valley\",\n        \"message\": \"Flood report added successfully\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
